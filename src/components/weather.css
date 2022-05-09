@@ -1,0 +1,213 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.Fondo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(./images/bg.jpg) repeat center center / cover;
+}
+
+.Card{
+    position: relative;
+    width: 300px;
+    margin: 20px auto;
+    padding: 2px;
+    text-align: center;
+    background: cover;
+    background-color: rgba(243, 243, 243, 0.7);
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px 5PX rgba(0, 0, 0, 0.9); 
+    font-family: Montserrat; 
+}
+.City{
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-shadow: 1px 3px 3px rgba(255, 0, 0, 0.9);
+    text-align: center;
+    font-weight: bolder;
+
+}
+.Description{
+    color: #fe0000;
+    font-size: 10px;
+    text-transform: capitalize;
+    text-shadow: 1px 2px 3px rgba(255, 255, 255, 0.9);
+}
+
+.Temp{
+    display: flex;
+    color: #ff0000;
+    margin-top: -40px;
+    margin-left: 100px;
+    font-size: 20px;
+    text-transform: capitalize;    
+}
+.Temp1{
+    display: flex;
+    color: #000000;
+    margin-top: -40px;
+    margin-left: 100px;
+    font-size: 20px;
+    text-transform: capitalize;  
+}
+.Des{
+    color: #000000;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.Des1{
+    color: #ff0000;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.Icon{ 
+    display: flex;
+    width: 20%;
+    margin-left: 20px;
+}
+
+P{
+    padding: 0;
+    margin: 0 15px;
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: capitalize;
+    text-shadow: 1px 3px 3px rgba(255, 0, 0, 0.9);
+    text-align: center;
+    font-weight: bolder;
+}
+
+.Sunset{
+    display: absolute;
+    font-size: small;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 40px;
+    color: #000000;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);
+}
+.Wind{
+    display: absolute;
+    font-size: small;
+    text-align: right;
+    margin-right: 40px;
+    margin-top: -51px;
+    color: #000000;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);
+}
+.Pressure{
+    display: absolute;
+    font-size: small;
+    text-align: left;
+    margin-left: 40px;
+    color: #000000;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);
+}
+
+.Humidity{
+    display: absolute;
+    font-size: small;
+    text-align: right;
+    margin-top: -70px;
+    margin-right: 40px;
+    color: #000000;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);
+}
+.des{
+    margin-top: 5px;
+}
+
+button{
+    position: relative;
+    display: inline-block;
+    color: #ff0000;
+    text-shadow: 5px 5px 5px 5px white;
+    background-color: transparent;
+    font-size: 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-style: outset #ff0000;
+    cursor: pointer;
+    margin-bottom: 2px;
+    padding: 5px ;
+    font-family: Montserrat; 
+}
+button:hover{
+    background: #ff0000;
+    color: #ffffff;
+    box-shadow: 0 0 10px #ff0000,
+                0 0 40px #ff0000,
+                0 0 80px #ff0000;
+    transition-delay: 1s;
+}
+button span{
+    position: absolute;
+    display: block;
+}
+button span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ff0000);
+}
+button span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #ff0000);
+}
+button span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ff0000);
+}
+button span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #fe0000);
+}
+button:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+button:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+button:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+button:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
